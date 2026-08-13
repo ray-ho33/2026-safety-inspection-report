@@ -5,8 +5,8 @@ const emptyState = document.querySelector('#empty-state');
 const errorState = document.querySelector('#error-state');
 const sheetFrame = document.querySelector('#consistency-sheet');
 
-// 공개 Google Sheets 문서를 iframe용 미리보기 화면으로 표시합니다.
-const PUBLISHED_SHEET_URL = 'https://docs.google.com/spreadsheets/d/1-PLvdTOC_fdulGL_S4gS7VuejX28AZNU4PH7CONRDoM/preview?gid=0&widget=true&headers=false';
+// 공개 Google Sheets의 HTML 표를 iframe으로 표시합니다.
+const PUBLISHED_SHEET_URL = 'https://docs.google.com/spreadsheets/d/1-PLvdTOC_fdulGL_S4gS7VuejX28AZNU4PH7CONRDoM/gviz/tq?tqx=out:html&gid=0';
 sheetFrame.src = PUBLISHED_SHEET_URL;
 
 let chapters = [];
